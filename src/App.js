@@ -1,9 +1,14 @@
+import Login from "./Component/Login";
+import Profile from "./Component/Profile";
+import UserContextProvider from "./Context/UserContextProvider";
 
 function App() {
   return (
-    <div className="App">
-     context
-    </div>
+    <UserContextProvider>
+     <h1>React with Chai</h1>
+     <Login/>
+     <Profile/>
+    </UserContextProvider>
   );
 }
 
